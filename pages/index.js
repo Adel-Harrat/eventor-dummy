@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Eventor | Homepage</title>
       </Head>
-      
+
       <EventList items={featuredEvents} />
     </section>
   );

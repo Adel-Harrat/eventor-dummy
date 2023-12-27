@@ -28,7 +28,7 @@ export default function FilteredEventsPage() {
     numMonth > 12
   ) {
     return (
-      <div className="max-w-2xl mx-auto text-center mb-10 flex items-center justify-center flex-col gap-5">
+      <div className="max-w-2xl mx-auto text-center mb-10 flex items-center justify-center flex-col gap-5 px-5 md:px-0">
         <Head>
           <title>Eventor | Invalid Filter</title>
         </Head>
@@ -45,7 +45,7 @@ export default function FilteredEventsPage() {
 
   if (!filteredEvents || filteredEvents.length === 0) {
     return (
-      <div className="max-w-2xl mx-auto text-center mb-10 flex items-center justify-center flex-col gap-5">
+      <div className="max-w-2xl mx-auto text-center mb-10 flex items-center justify-center flex-col gap-5 px-5 md:px-0">
         <Head>
           <title>Eventor | No Events</title>
         </Head>

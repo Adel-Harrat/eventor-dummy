@@ -14,7 +14,7 @@ export default function EventDetailPage() {
 
   if (!event) {
     return (
-      <div className="max-w-2xl mx-auto text-center mb-10 flex items-center justify-center flex-col gap-5">
+      <div className="max-w-2xl mx-auto text-center mb-10 flex items-center justify-center flex-col gap-5 px-5 md:px-0">
         <p className="font-semibold text-xl text-zinc-800">No event found!</p>
         <Button link="/events">Show All Events</Button>
       </div>
