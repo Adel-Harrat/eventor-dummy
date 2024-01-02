@@ -3,7 +3,7 @@ import LogoIcon from "../icons/logo-icon";
 
 function MainHeader(props) {
   return (
-    <header className="bg-blue-500 h-16 px-5 sm:px-10">
+    <header className="bg-blue-600 h-16 px-5 sm:px-10">
       <div className="flex items-center justify-between max-w-2xl h-full mx-auto">
         <div>
           <Link

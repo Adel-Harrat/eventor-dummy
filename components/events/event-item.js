@@ -23,9 +23,9 @@ function EventItem(props) {
         <Image
           src={"/" + image}
           alt={title}
-          className="h-full w-full object-cover"
-          width={350}
-          height={250}
+          className="object-cover hover:scale-150 hover:rotate-12 hover:saturate-50 transition-all ease-in-out duration-300 h-full"
+          width={344}
+          height={240}
         />
       </div>
 
@@ -50,7 +50,7 @@ function EventItem(props) {
 
         <div className="flex justify-end py-5 pr-5">
           <Button link={ExploreLink}>
-            Explore Event
+            Explore
             <ArrowRightIcon />
           </Button>
         </div>

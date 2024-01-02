@@ -1,11 +1,14 @@
 import Link from "next/link";
 
 function Button(props) {
+  const classes = `inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 gap-5 ${props.className}`;
+
   if (!props.link) {
     return (
       <button
         onClick={props.onClick}
-        className="bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold tracking-tight text-sm sm:text-lg hover:bg-blue-400 transition-all ease-in-out duration-500 flex items-center justify-between gap-3"
+        className={classes}
+        disabled={props.disabled}
       >
         {props.children}
       </button>
@@ -13,10 +16,7 @@ function Button(props) {
   }
 
   return (
-    <Link
-      className="bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold tracking-tight text-sm sm:text-lg hover:bg-blue-400 transition-all ease-in-out duration-500 flex items-center justify-between gap-3"
-      href={props.link}
-    >
+    <Link className={classes} href={props.link}>
       {props.children}
     </Link>
   );
